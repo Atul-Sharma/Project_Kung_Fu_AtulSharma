@@ -1,0 +1,13 @@
+application: dev-guide
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /assets
+  static_dir: assets
+
+- url: /.*
+  script: main.application
+

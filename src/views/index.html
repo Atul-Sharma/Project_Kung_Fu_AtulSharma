@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="/assets/js/main.js"></script>
+	<style>
+      html, body, #map_canvas {
+        height: 400px;
+        margin: 0;
+        padding: 0;
+      }
+      .margin-top {
+      margin-top:20px;
+      }
+
+    </style>
+	
+</head>
+<body>
+
+<div class="container">
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h3>Look Up</h3>
+    </div>
+  </div>
+</nav>
+	<div class="row margin-top">
+		<div class="col-md-8">
+			<form class="form-inline" onSubmit="Home.init(event)" >
+				<div class="form-group">
+					<input type="text" class="form-control" id="idLat" placeholder="Latitude" pattern="-?\d{1,3}\.\d+" required>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="idLng" placeholder="Longitude" pattern="-?\d{1,3}\.\d+" required>
+					
+				</div>
+				<button type="submit" class="btn btn-info" >Submit</button></br>
+				
+				<label id="error" style="display:none;"></label>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<input type="text" class="form-control" id="idAddr" placeholder="Address" onkeypress="Home.check(event)">
+		</div>
+	</div>
+	<div class="row margin-top">
+		<div class="col-md-12">
+			<div id="map_canvas"></div>
+		</div>
+	</div>
+	
+</div>
+</br>
+
+
+
+</body>
+</html>
