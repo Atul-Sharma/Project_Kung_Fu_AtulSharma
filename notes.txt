@@ -1,0 +1,13 @@
+# Project_Kung_Fu_AtulSharma
+New Repo
+
+Q: Why did you design the code this way?
+
+A: The code is designed in most optimised way as it contains less server side processing. The code is desinged in a structured manner using MVC pattern for source code, used object oriented javascript, used bootstrap for easy designing.
+
+
+Q: What API is used?
+
+A: Google Maps Javascript API is used.
+
+
